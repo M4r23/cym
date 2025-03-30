@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <ChoceRoute/>
+      <Buho/>
 
       {/* <Routes>
         <Route index path='inicio' element={<Home/>}></Route>
