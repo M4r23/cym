@@ -11,10 +11,13 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route index element={<Home/>}></Route>
+      <ChoceRoute/>
+
+      {/* <Routes>
+        <Route index path='inicio' element={<Home/>}></Route>
         <Route path='routes' element={<ChoceRoute/>}></Route>
-      </Routes>
+        button path='inicio'
+      </Routes> */}
     </>
   )
 }
