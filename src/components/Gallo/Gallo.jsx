@@ -32,6 +32,9 @@ function Gallo() {
         className="w-full max-w-[420px] h-[238px] object-contain"
       />
     </figure>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.858208327452!2d-97.11260329999999!3d18.848971400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c502b83944bab9%3A0x27ecd6e8377ce8c3!2sPrivada%20de%20Nte.%2013%20337A%2C%20Centro%2C%2094350%20Orizaba%2C%20Ver.!5e0!3m2!1ses!2smx!4v1743892193899!5m2!1ses!2smx" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <Link to='/home'>
     <button className="mt-20 text-xl leading-normal text-black bg-zinc-300 h-[53px] w-[206px] flex items-center justify-center">
       home
