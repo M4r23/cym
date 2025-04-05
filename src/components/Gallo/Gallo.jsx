@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 
 function Gallo() {
@@ -31,9 +32,11 @@ function Gallo() {
         className="w-full max-w-[420px] h-[238px] object-contain"
       />
     </figure>
+    <Link to='/home'>
     <button className="mt-20 text-xl leading-normal text-black bg-zinc-300 h-[53px] w-[206px] flex items-center justify-center">
       home
     </button>
+    </Link>
       </section>
     </main>
   );

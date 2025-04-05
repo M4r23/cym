@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 // Logo component for the top section
 const Logo = () => {
@@ -64,7 +65,9 @@ function Buho() {
       <Divider />
       <BuhoButton />
       <MapDisplay />
-      <HomeIndicator />
+      <Link to='/home'>
+        <HomeIndicator />
+      </Link>
     </main>
   );
 }
