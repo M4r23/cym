@@ -57,6 +57,100 @@ const HomeIndicator = () => {
   );
 };
 
+
+
+const TablaBuho = () => {
+  const paradasBuho = [
+  {
+    parada: 'Poniente 7 (Casa de la Asegurada)',
+    direccion: 'Poniente 7 entre Sur 20 y 22, Orizaba, Ver.',
+    horario: '11:00 p.m.',
+  },
+  {
+    parada: 'Mercado Cerritos',
+    direccion: 'Norte 8, Cerritos, Orizaba, Ver.',
+    horario: '11:15 p.m.',
+  },
+  {
+    parada: 'Aeroparque',
+    direccion: 'Calle 20 de Noviembre, Rincón Grande, Orizaba, Ver.',
+    horario: '11:30 p.m.',
+  },
+  {
+    parada: 'Parque Unidad Habitacional Pluviosilla',
+    direccion: 'Calle 12, Pluviosilla, Orizaba, Ver.',
+    horario: '11:45 p.m.',
+  },
+  {
+    parada: 'Plaza Valle',
+    direccion: 'Oriente 6, Emiliano Zapata Sur, Orizaba, Ver.',
+    horario: '12:00 a.m.',
+  },
+  {
+    parada: 'Tobogán de la Montaña',
+    direccion: 'Calle Sur 15, Barrio Nuevo, Orizaba, Ver.',
+    horario: '12:15 a.m.',
+  },
+  {
+    parada: 'Casavegas',
+    direccion: 'Oriente 6, Centro, Orizaba, Ver.',
+    horario: '12:30 a.m.',
+  },
+  {
+    parada: 'Poliforum Mier y Pesado',
+    direccion: 'Sur 10, Centro, Orizaba, Ver.',
+    horario: '12:45 a.m.',
+  },
+  {
+    parada: 'Secundaria Federal Margarita Maza',
+    direccion: 'Norte 5, Centro, Orizaba, Ver.',
+    horario: '1:00 a.m.',
+  },
+  {
+    parada: 'Jardín Botánico BIORI',
+    direccion: 'Poniente 7, Centro, Orizaba, Ver.',
+    horario: '1:15 a.m.',
+  },
+  {
+    parada: 'La Placa',
+    direccion: 'Calle Real, Barrio Nuevo, Orizaba, Ver.',
+    horario: '1:30 a.m.',
+  },
+];
+  return (
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+      <div className="w-full max-w-6xl bg-white shadow-md rounded-2xl p-6">
+        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+          Horarios del Autobús "El Búho" - Orizaba, Veracruz
+        </h1>
+        <div className="overflow-x-auto">
+          <table className="min-w-full text-sm text-left text-gray-700">
+            <thead>
+              <tr className="bg-gray-200 text-gray-700">
+                <th className="px-4 py-3">Parada</th>
+                <th className="px-4 py-3">Dirección</th>
+                <th className="px-4 py-3">Horario Estimado</th>
+              </tr>
+            </thead>
+            <tbody>
+              {paradasBuho.map((p, idx) => (
+                <tr key={idx} className="border-b hover:bg-gray-50">
+                  <td className="px-4 py-3">{p.parada}</td>
+                  <td className="px-4 py-3">{p.direccion}</td>
+                  <td className="px-4 py-3">{p.horario}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-gray-500 text-center mt-4">
+          * El servicio es gratuito y los horarios pueden variar según las condiciones del tráfico.
+        </p>
+      </div>
+    </div>
+  );
+};
+
 // Main HomeScreen component that combines all the sections
 function Buho() {
   return (
@@ -68,6 +162,7 @@ function Buho() {
       <Link to='/home'>
         <HomeIndicator />
       </Link>
+    <TablaBuho/>
     </main>
   );
 }

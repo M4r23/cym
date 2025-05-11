@@ -9,6 +9,6 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
-    host: '192.168.0.220' 
+    // host: '192.168.0.220' 
   }
 })
