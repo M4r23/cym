@@ -3,7 +3,7 @@ export default function Icon ({ src, widht }) {
     <section className="flex justify-center">
       <img
         src={src}
-        className={widht}
+        className={`${widht} fill-cyan-600`}
         alt="Buho Button"
       />
     </section>

@@ -1,12 +1,12 @@
 import Logo from "../../components/Logo/Logo";
 import Divider from "../../components/Divider/Divider";
 import Button from "../../components/Button/Button";
-import buhoIcon from "../../assets/icons/buho-icon.png";
-import galloIcon from "../../assets/icons/gallo-icon.png";
+import buhoIcon from "/icons/buho-icon-home.png";
+import galloIcon from "/icons/gallo-icon-home.png";
 
 function Home() {
   return (
-    <main className="p-4 mx-auto w-full min-h-screen max-w-[412px] max-md:p-4 max-sm:p-3 bg-fixed bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url('/src/assets/images/home-img.png')" }}>
+    <main className="p-4 mx-auto w-full min-h-screen max-w-[412px] max-md:p-4 max-sm:p-3 bg-fixed bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url('/images/home-img.png')" }}>
       <section className="bg-white/75 min-h-screen flex flex-col justify-center items-center px-6 rounded-3xl">
         <header>
           <Logo />
