@@ -6,8 +6,8 @@ import { paradasBuho } from "../../constants/paradasBuho";
 
 const TablaBuho = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white p-4">
-      <div className="w-full max-w-6xl bg-gray-100 shadow-md rounded-2xl p-6">
+    <div className="flex justify-center items-center min-h-screen p-4">
+      <div className="w-full max-w-6xl bg-gray-100 shadow-md rounded-2xl p-2">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Paradas y Horarios del Autobús - Orizaba, Veracruz
         </h1>
@@ -43,8 +43,8 @@ const TablaBuho = () => {
 // Main HomeScreen component that combines all the sections
 function Buho() {
   return (
-    <main className="w-full mx-auto bg-white max-w-[412px] min-h-[917px] max-md:w-full max-sm:w-full">
-      <section className="">
+    <main className="p-4 w-full mx-auto max-w-[412px] min-h-[917px] max-md:w-full max-sm:w-full bg-fixed bg-no-repeat bg-center bg-cover"  style={{ backgroundImage: "url('/src/assets/images/home-img.png')" }}>
+      <section className="bg-white/80 min-h-screen flex flex-col justify-center items-center  rounded-3xl">
         <Logo />
         <section className="flex justify-center items-center gap-4 mb-10">
           <Icon src="src/assets/icons/buho-icon.png" widht='w-[75px]' />
@@ -64,7 +64,7 @@ function Buho() {
           <img src="src/assets/maps/route-buho.png" alt="map route buho" />
         </figure>
         <TablaBuho />
-        <section className="flex justify-center mt-5 mb-10">
+        <section className="flex justify-center mt-5 pb-10">
           <Button title="Inicio" to="/home" />
         </section>
       </section>
