@@ -5,7 +5,7 @@ import { paradasGallo } from "../../constants/paradasGallo";
 import Button from "../../components/Button/Button";
 import galloIcon from "/icons/gallo-icon-red.png";
 import galloPreview from "/images/gallo-preview.jpg";
-import galloMap from "/maps/gallo-map.png";
+import galloMap from "/maps/gallo-map.gif";
 
 function Gallo() {
   return (

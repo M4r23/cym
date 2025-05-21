@@ -5,7 +5,7 @@ import Logo from "../../components/Logo/Logo";
 import { paradasBuho } from "../../constants/paradasBuho";
 import buhoIcon from "/icons/buho-icon-purple.png";
 import buhoPreview from "/images/buho-preview.jpg";
-import buhoMap from "/maps/buho-map.png";
+import buhoMap from "/maps/buho-map.gif";
 
 const TablaBuho = () => {
   return (
