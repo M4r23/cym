@@ -1,51 +1,30 @@
-"use client";
-import * as React from "react";
-import { Link } from "react-router-dom";
+import Button from "../../components/Button/Button";
+import Logo from "../../components/Logo/Logo";
 
 function Welcome() {
   return (
-    <main className="flex overflow-hidden flex-col items-center pt-4 pb-14 mx-auto w-full text-center text-black bg-white max-w-[480px]">
-      <HeaderSection />
-      <ContentSection />
-      <ActionSection />
+    <main
+      className="relative p-4 mx-auto w-full  max-w-[412px] bg-fixed bg-no-repeat bg-center bg-cover"
+      style={{ backgroundImage: "url('/images/home-img.png')" }}
+    >
+      <section className="min-h-screen flex flex-col items-center px-4 rounded-3xl">
+        <Logo />
+        <section className="bg-white/0 p-4 shadow rounded-2xl backdrop-blur-xs" >
+          <h2 className="text-3xl font-bold  text-gray-900 mb-4">
+            !Bienvenido a Rutas Orizaba¡
+          </h2>
+          {/* <p className="text-3xl font-bold text-gray-800 mb-4">Explira fácilmente las rutas de camiones de la ciudad</p> */}
+          <p className="text-gray-800 text-lg font-medium ">
+            Consulta rutas, paradas y horarios desde tu celular.
+            <span className="font-bold"> ¡Viajar nunca fue tan fácil!</span>
+          </p>
+        </section>
+        <section className="absolute bottom-24 left-0 right-0 flex place-items-center justify-center">
+        <Button title="Comenzar" to="/home" />
+
+        </section>
+      </section>
     </main>
-  );
-}
-
-function HeaderSection() {
-  return (
-    <>
-      <img
-        src="images/MBJLS-PS.png"
-        alt="Logo"
-        className="object-contain max-w-full aspect-square w-[188px] "
-      />
-      <h1 className="ml-6 text-8xl">HELLO</h1>
-    </>
-  );
-}
-
-function ContentSection() {
-  return (
-    <section className="w-full mt-28">
-      <img
-        src="images/image1.png"
-        alt="Featured content"
-        className="object-contain h-[300px] w-full "
-      />
-    </section>
-  );
-}
-
-function ActionSection() {
-  return (
-    <section className="mt-24">
-      <Link to='/home'>
-        <button className="px-16 py-3 max-w-full text-3xl bg-indigo-200 w-[338px]">
-          Let´s go
-        </button>
-      </Link>
-    </section>
   );
 }
 
