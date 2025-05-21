@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import Gallo from "../components/Gallo/Gallo";
-import Buho from "../components/Buho/Buho";
-import Welcome from "../components/Welcome/Welcome";
-import Home from "../components/home/Home";
+import Gallo from "../pages/Gallo/Gallo";
+import Buho from "../pages/Buho/Buho";
+import Welcome from "../pages/Welcome/Welcome";
+import Home from "../pages/home/Home";
 
 export let router = createBrowserRouter([
   {
