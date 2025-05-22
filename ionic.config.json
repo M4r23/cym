@@ -1,0 +1,7 @@
+{
+  "name": "marcos-project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
