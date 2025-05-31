@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">marcos-project</string>
-    <string name="title_activity_main">marcos-project</string>
+    <string name="app_name">MBJLS-PS</string>
+    <string name="title_activity_main">MBJLS-PS</string>
     <string name="package_name">marcos.project</string>
     <string name="custom_url_scheme">marcos.project</string>
 </resources>

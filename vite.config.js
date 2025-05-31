@@ -7,8 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-  ],
-  server: {
-    host: '192.168.1.67'
-  }
+  ]
 })
